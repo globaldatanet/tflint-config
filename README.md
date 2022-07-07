@@ -1,2 +1,6 @@
 # tflint-config
-TFLint Config file Updates
+
+Keeps TFLint Config file up-to-date:
+
+- AWS Plugin (rules) version
+- General Rules
