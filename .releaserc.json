@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          { "path": ".tflint.hcl", "label": "Recommended TFLint Config" },
+          { "path": ".tflint-all.hcl", "label": "Full TFLint Config" }
+        ]
+      }
+    ]
+  ]
+}
