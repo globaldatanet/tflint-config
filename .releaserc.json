@@ -1,0 +1,28 @@
+{
+  "branches": ["main"],
+  "plugins": [
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file. \nSee [Conventional Commits](https://conventionalcommits.org) for commit guidelines."
+      }
+    ],
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          { "path": ".tflint.hcl", "label": ".tflint.hcl" },
+          { "path": ".tflint-all.hcl", "label": ".tflint-all.hcl" }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "message": "chore: Release ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}
