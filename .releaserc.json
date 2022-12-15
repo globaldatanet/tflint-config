@@ -1,5 +1,5 @@
 {
-  "branches": ["main", "1-setting-individual-terraform-rules-compared-to-using-terraform-plugin-with-recommended-settings"],
+  "branches": ["main"],
   "plugins": [
     [
       "@semantic-release/changelog",
@@ -13,8 +13,8 @@
       "@semantic-release/github",
       {
         "assets": [
-          { "path": "tflint.hcl", "label": ".tflint.hcl" },
-          { "path": "tflint-all.hcl", "label": ".tflint-all.hcl" }
+          { "path": ".tflint.hcl", "label": ".tflint.hcl" },
+          { "path": ".tflint-all.hcl", "label": ".tflint-all.hcl" }
         ]
       }
     ],

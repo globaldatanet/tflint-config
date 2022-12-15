@@ -19,3 +19,7 @@ The Terraform rules can be found on [GitHub](https://github.com/terraform-linter
 - **[terraform_naming_convention]()** Enforces naming conventions for resources, data sources, etc
 - **[terraform_standard_module_structure]()** Ensure that a module complies with the Terraform Standard Module Structure
 - **[terraform_unused_required_providers]()** Check that all `required_providers` are used in the module
+
+## Contribution
+Contribution is welcome. Please use [conventional commit](https://www.conventionalcommits.org) messages for your commits and pull request titles.
+Through GitHub Actions the CHANGELOG gets updated, tag created and release published with the TFLint configuration files as assets.
