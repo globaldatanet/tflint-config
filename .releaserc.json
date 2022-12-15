@@ -1,5 +1,5 @@
 {
-  "branches": ["main"],
+  "branches": ["main", "1-setting-individual-terraform-rules-compared-to-using-terraform-plugin-with-recommended-settings"],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
