@@ -5,6 +5,12 @@ plugin "aws" {
     source      = "github.com/terraform-linters/tflint-ruleset-aws"
 }
 
+plugin "terraform" {
+  enabled = true
+  # or "all" which will include below optional rules
+  preset  = "recommended"
+}
+
 config {
   # disallow module inspection
   module     = false
