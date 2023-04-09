@@ -1,21 +1,19 @@
 plugin "aws" {
-    enabled     = true
-    # deep_check  = true
-    version     = "0.21.1"
-    source      = "github.com/terraform-linters/tflint-ruleset-aws"
+  enabled = true
+  # deep_check  = true
 }
 
 plugin "terraform" {
   enabled = true
   # or "all" which will include below optional rules
-  preset  = "recommended"
+  preset = "recommended"
 }
 
 config {
   # disallow module inspection
-  module     = false
+  module = false
   # do not return 0 exit status if issues have been found 
-  force      = false
+  force = false
 }
 
 # # optional
